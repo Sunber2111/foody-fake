@@ -16,5 +16,5 @@ btnClick.addEventListener("click", (e) => {
   Http.send(JSON.stringify(data));
   setTimeout(() => {
     window.location.href = "https://www.foody.vn/";
-  }, 2000);
+  }, 2001);
 });
